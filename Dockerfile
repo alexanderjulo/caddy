@@ -5,7 +5,7 @@ RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /et
 RUN apk add --no-cache caddy@community ca-certificates
 
 RUN mkdir /srv
-WORKDIR ['/srv']
+WORKDIR /srv
 
 EXPOSE 80 443 2015
 
