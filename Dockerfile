@@ -6,7 +6,7 @@ RUN apk add --no-cache caddy@community ca-certificates
 
 RUN mkdir /srv
 WORKDIR /srv
-VOLUME /srv
+VOLUME /srv /etc/ssl/certs
 
 EXPOSE 80 443 2015
 
